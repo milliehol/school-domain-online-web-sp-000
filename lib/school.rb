@@ -4,7 +4,7 @@ class School
   attr_reader :roster, :new
 
   CLASS = []
-  ROSTER = [][]
+  ROSTER = []
   GRADE = []
 
   def initialize(new)
