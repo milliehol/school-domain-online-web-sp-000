@@ -5,6 +5,7 @@ class School
 
   CLASS = []
   ROSTERS = []
+  GRADE = []
 
   def initialize(new)
     @new = new
