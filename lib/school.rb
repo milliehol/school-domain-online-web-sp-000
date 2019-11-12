@@ -1,21 +1,37 @@
 # code here!
 class School
-  attr_accessor :new, :size, :material, :condition, :brand
-  attr_reader :roster, :new
+  
+ def initialize(school)
+  @school = school
+  @roster = {}
+end
 
-  CLASS = []
-  ROSTER = []
-  GRADE = []
+def roster
+  @roster
+end
 
-  def initialize(new)
-    @school = new
+def grade(number)
+  @roster[number]
+end
+
+def add_student(name, grade)
+  @student_name = name
+  @grade = grade
+  if @roster.include?(grade) == false
+    @roster[grade] = []
   end
+  @roster[grade] << name
+end
 
-  def add_student(new, grade)
-   @school << new
-   CLASS << new
-   GRADE << grade
- end
+def grade(number)
+  @roster[number]
+end
+
+def sort
+  @roster.each do |grade, name|
+    @roster[grade] = name.sort
+  end
+end
 
 
 end
