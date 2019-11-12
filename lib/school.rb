@@ -6,12 +6,12 @@ class School
   CLASS = []
   ROSTERS = []
 
-  def initialized(new)
+  def initialize(new)
     @new = new
     @school = []
   end
 
-  def add_student=(new)
+  def add_student(new)
    @school << new
    CLASS << new
    GRADE << new
