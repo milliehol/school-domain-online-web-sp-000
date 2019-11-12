@@ -4,12 +4,11 @@ class School
   attr_reader :roster, :new
 
   CLASS = []
-  ROSTERS = []
+  ROSTER = [][]
   GRADE = []
 
   def initialize(new)
-    @new = new
-    @school = []
+    @school = new
   end
 
   def add_student(new)
