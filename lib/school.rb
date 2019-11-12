@@ -11,10 +11,10 @@ class School
     @school = new
   end
 
-  def add_student(new)
+  def add_student(new, grade)
    @school << new
    CLASS << new
-   GRADE << new
+   GRADE << grade
  end
 
 
